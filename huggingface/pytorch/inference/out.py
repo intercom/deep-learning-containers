@@ -6,7 +6,7 @@ try:
     ):
         import threading
 
-        cmd = "python /usr/local/bin/deep_learning_container.py --framework huggingface_pytorch --framework-version 2.3.0 --container-type inference &>/dev/null"
+        cmd = "python /usr/local/bin/deep_learning_container.py --framework huggingface_pytorch --framework-version 2.6.0 --container-type inference &>/dev/null"
         x = threading.Thread(target=lambda: os.system(cmd))
         x.setDaemon(True)
         x.start()
